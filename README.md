@@ -6,4 +6,5 @@ SkyWayのサーバー接続部分のみを行うライブラリのサンプル�
 ## 動作サンプル
 以下のリンクを２タブ開いて一方で他方のIDを入力して接続ボタンをクリックすれば、  
 SkyWayを使用して動画がシェアされます。  
+
 [サンプルページ](https://turbographics2000.github.io/SkyWayConnector_Sample/)
