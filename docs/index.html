@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="socket.io.js"></script>
+    <script type="module" src="main.js"></script>
+    <style>
+        video {
+            width: 100%;
+        }
+
+        #dispMyId::before {
+            content: "自分のID："
+        }
+
+        .video-wrapper {
+            text-align: center;
+            width: 360px;
+            height: 360px;
+            float: left;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dispMyId"></div>
+    <div>
+        <input type="text" id="txtRemoteId" placeholder="接続先のID">
+        <button id="btnConnect">接続</button>
+    </div>
+    <div>※音はミュートにしています。</div>
+    <div>
+        <div class="video-wrapper">
+            ローカルストリーム
+            <video id="selfView" muted autoplay loop></video>
+        </div>
+        <div class="video-wrapper">
+            リモートストリーム
+            <video id="remoteView" muted autoplay loop></video>
+        </div>
+    </div>
+</body>
+
+</html>
