@@ -4,7 +4,7 @@ let pcs = {};
 let myId = null;
 
 const con = new SkyWayConnector({
-    key: 'cc1edbd6-1f11-48ab-9680-f2a5f74633b4'
+    key: 'bea1e09a-a7f9-41fb-8700-e6d18ba907bd'
 });
 
 con.on('open', conId => {
